@@ -1,4 +1,5 @@
-\section{Topologies des réseaux}
+%\section{}
+\subsection{Topologies des réseaux}
 Maintenant que nous connaissons le matériel nécessaire pour établir une connexion, nous pouvons voir les différentes manières possible de les connecter entre-eux. La façon dont les appareils sont connectés entre-eux est appelée \textbf{topologie}. On peut différencier deux types de topologies.
 
 \UPSTIdefinition{
@@ -8,7 +9,7 @@ Maintenant que nous connaissons le matériel nécessaire pour établir une conne
   La \textbf{topologie logique} désigne quant à elle la manière dont les données transitent dans les câbles.
 }
 
-\subsection{Quelques topologies physiques classiques}
+
 \begin{figure}[h!t]
   \centering
   \includegraphics[width=.7\textwidth]{images/topologies/reseau_topologies}
@@ -56,7 +57,3 @@ Contrairement aux réseaux construits sur une topologie en bus, les réseaux sui
 Il s'agit de la topologie la plus robuste car tous les éléments sont connectés à tous les autres (Figure~\ref{fig:topoMaillee}). Chaque élément peut donc communiquer avec n'importe quel autre élément en utilisant la connexion propre. L'avantage d'une topologie maillée est sa robustesse aux pannes de raccordement. En effet, si le lien entre deux éléments est défectueux, cela n'aura une influence que sur la communication entre deux éléments. Les autres connexions sont toujours possibles. En passant par un intermédiaire, les deux éléments concernés peuvent d'ailleurs toujours communiquer.
 
 En revanche, ce type de réseau impose un nombre de connexion considérable. Ce nombre est de $\frac{n(n-1)}{2}$ connexions, avec $n$ le nombre d'éléments connectés. Sur la Figure~\ref{fig:topoMaillee}, 6 éléments sont connectés, nécessitant $\frac{6 \times 5}{2} = 15$ câbles. Le calcul pour une institution ayant 500 machines donne alors un nombre de connexion de \num{124700}... C'est une architecture réseau qui convient donc dans des cas précis où la robustesse est primordiale et où la taille du réseau est suffisamment petite.
-
-\subsubsection{Internet}
-
-Internet est un ensemble de réseaux interconnecté. Il est chacun de ces réseaux a sa propre topologie (le plus souvent une topologie en étoile). Cette diversité de topologies et le fait que plusieurs chemins soient possibles font qu'internet a une topologie hybride.
