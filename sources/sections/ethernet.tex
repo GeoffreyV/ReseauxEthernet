@@ -1,6 +1,6 @@
 \FloatBarrier
 \section{Liaison Ethernet : les couches 1 et 2}
-\subsection{Couche 0 : Transmission de données}
+\subsection{Couche 1 : Transmission de données}
 Pour la couche 0, la norme Ethernet définit les supports physiques possibles. En fonction de la norme suivie, différents débits
 \begin{description}
   \item [10 BaseT : ] Paire torsadée \SI{100}{Mbit/s}
@@ -19,7 +19,7 @@ Le format de la norme est également défini par la norme Ethernet. Par exemple,
   \label{fig:manchesterCode}
 \end{figure}
 
-\subsection{Couche 1 : Trame Ethernet}
+\subsection{Couche 2 : Trame Ethernet}
 \subsubsection{L'adresse MAC}
 Comme discuté en section \ref{sec:CarteReseau}, chaque organe connecté au réseau possède une adresse MAC \textbf{unique} dans le monde. Chaque constructeur de carte réseau a un préfixe qui lui est attribué, puis il attribue à chaque matériel qu'il produit un code unique. Ainsi, théoriquement, tous les appareils connectés au réseaux possèdent une adresse MAC différente. On représente généralement une adresse MAC sous la forme hexadécimale pour des raisons évidentes de lisibilités. Par exemple, l'adresse MAC 00:1B:44:11:3A:B7 est décomposée dans le Tableau~\ref{tab:macExample}. Il est possible de retrouver le fabriquant d'une carte réseau via de nombreux site comme \url{https://macvendors.com/}.
 
