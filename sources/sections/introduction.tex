@@ -30,19 +30,17 @@ En réseau informatique, chaque élément d'un réseau est appelé un  \hyperlin
 
 
 \subsection{Caractéristiques d'un réseau}
+
+\subsubsection{Débit et bande passante}
+\input{sections/generalites/debitBandePassante}
+\subsubsection{Latence}
+\input{sections/generalites/latence}
+\subsubsection{Caractériser un réseau}
 On peut définir différentes caractéristiques d'un réseau. Selon les applications, ces caractéristiques seront plus ou moins importantes.
 \begin{description}
   \item [Fiabilité : ] capacité d'un réseau à acheminer les messages sans erreur
   \item [Robustesse : ] capacité d'un réseau à ne pas tomber en panne
+  \item [Rapidité : ] la rapidité est d'autant plus forte que la latence est faible.
   \item [Déterminisme : ] connaissance précise du temps de réponse
-  \item [Rapidité : ] temps de réponse
   \item [Débit : ] Quantité de données pouvant être acheminée chaque seconde
 \end{description}
-
-\UPSTIdefinition{\begin{itemize}
-  \item Le \textbf{temps-bit} est la durée de transmission d'un bit
-  \item Le \textbf{débit} est la quantité d'information transmise par unité de temps.
-  \begin{itemize}
-    \item Exprimé en bit/s ou octet/s
-  \end{itemize}
-\end{itemize}}
